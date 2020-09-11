@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animate</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.0/animate.min.css" integrity="sha512-kb1CHTNhoLzinkElTgWn246D6pX22xj8jFNKsDmVwIQo+px7n1yjJUZraVuR/ou6Kmgea4vZXZeUDbqKtXkEMg==" crossorigin="anonymous" />
+    <h1 class="hh animate__flash">Click here for amazing Animations!!!!</h1>
+   <style>
+       h1{
+           text-align: center;
+       }
+       .hh{
+        animation: flash 2s infinite;
+       }
+        .box {
+            width: 100px;
+            height: 100px;
+            border: greenyellow;
+            background-color: indigo;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+            margin-left: 50px;
+            margin-top: 50px;
+        }
+        
+
+       /* .change{
+            width: 50px;
+            height: 50px;
+            top: 50%;
+            left: 50%;
+            border: greenyellow;
+            background-color: indigo;
+            animation: bounce 2s;
+        }*/
+        .border{
+                border-style: inset;
+                height: 300px;
+                width: 800px;
+                margin-left: 180px;
+                margin-bottom: 50px;
+                background-color:silver;
+        }
+        .button1 {
+        background-color:teal;
+        transition-duration: 0.4s;
+        font-size: 30px;
+        margin-top: 20px;
+        margin-left: 20px;
+        border-radius: 8px;
+        }
+
+       .button1:hover {
+                background-color: #4CAF50; /* Green */
+                color: aqua;
+        }
+        </style>
+
+        </head>
+        <body>
+            <div class="border" >
+                 <div>
+                   <button class="button1" id="button1">flash</button> </div> 
+                <div>
+                    <button class="button1" id="button2">wobble</button> </div>
+                <div>
+                    <button class="button1" id="button3">heartbeat</button> </div> 
+               <div> 
+                  <button class="button1" id="button4">Bounce</button> 
+            </div>
+            <div class="border" >
+                <div class="box" id="box"></div>
+            </div>
+            
+            <script src="animate.js"></script>
+      </body>
+
+     
+      </html>  
